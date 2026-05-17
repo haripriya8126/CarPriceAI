@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Vite proxies /api to Flask during development
-const api = axios.create({ baseURL: "https://carpriceai-kpbl.onrender.com/api/health" });
+const api = axios.create({ baseURL: "https://carpriceai-kpbl.onrender.com/api" });
 
 export const getHealth = () => api.get("/health");
 export const getDataset = () => api.get("/dataset");
