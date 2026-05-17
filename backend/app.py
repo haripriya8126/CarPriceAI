@@ -7,10 +7,10 @@ API base: http://localhost:5000/api
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-from ml_service import SalesPredictor
+from ml_service import CarPriceModel
 
 
-ml_service = SalesPredictor()
+ml_service = CarPriceModel()
 
 app = Flask(__name__)
 CORS(app)
