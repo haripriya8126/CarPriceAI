@@ -91,5 +91,4 @@ def chart_trend():
 
 
 if __name__ == "__main__":
-    model_service.ensure_sample_data()
-    app.run(debug=True, port=5000)
+    app.run(debug=True)
