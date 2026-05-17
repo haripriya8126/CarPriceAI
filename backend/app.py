@@ -7,7 +7,7 @@ API base: http://localhost:5000/api
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-from ml_model import SalesPredictor
+from backend.ml_model import SalesPredictor
 
 model_service = SalesPredictor()
 
